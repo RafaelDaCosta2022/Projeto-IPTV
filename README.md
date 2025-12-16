@@ -1,13 +1,14 @@
-# IPTV Prime - Landing Page
+# IPTV Prime - Landing Page (React + TypeScript)
 
-Landing page simples em HTML, CSS e JavaScript para apresentar um serviço de IPTV com informações de compatibilidade, lançamentos, plano de R$30/mês e programa de indicação.
+Landing page em React com TypeScript e Vite que apresenta um serviço de IPTV com compatibilidade ampla, lançamentos em destaque, plano de R$30/mês e programa de indicação.
 
-## Como usar
-1. Abra o arquivo `index.html` no navegador para visualizar o site.
-2. A seção de lançamentos alterna automaticamente entre filmes fictícios e pode ser controlada pelos botões ◀ ▶.
-3. Na área de indicação, clique em **Copiar link** para copiar o link de convite simulado.
+## Scripts
+- `npm install` — instala dependências.
+- `npm run dev` — inicia o servidor de desenvolvimento.
+- `npm run build` — gera o build de produção.
+- `npm run preview` — visualiza o build localmente.
 
 ## Estrutura
-- `index.html` — marcação da página e das seções principais.
-- `styles.css` — estilos e layout responsivo.
-- `script.js` — rotação automática de lançamentos e botão de copiar link de indicação.
+- `src/App.tsx` — estrutura das seções e lógica do carrossel e cópia do link de indicação.
+- `src/index.css` — estilos globais e responsivos.
+- `index.html` — ponto de entrada para o Vite renderizar a aplicação React.
