@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTV Prime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">IPTV Prime</div>
+    <nav class="menu">
+      <a href="#dispositivos">Compatibilidade</a>
+      <a href="#lancamentos">Lançamentos</a>
+      <a href="#planos">Planos</a>
+      <a href="#indicacao">Indicação</a>
+    </nav>
+    <a class="cta" href="#planos">Começar agora</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Seu entretenimento sem limites</p>
+        <h1>Assista seus canais favoritos com qualidade premium por apenas R$30/mês.</h1>
+        <p class="lede">Filmes, séries e esportes ao vivo em todos os seus dispositivos, com suporte 24/7 e atualização diária de conteúdo.</p>
+        <div class="hero__actions">
+          <a class="button primary" href="#planos">Escolher o plano</a>
+          <a class="button ghost" href="#lancamentos">Ver lançamentos</a>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="card__header">Plano Destaque</div>
+        <div class="card__price">
+          <span class="currency">R$</span>
+          <span class="value">30</span>
+          <span class="period">/mês</span>
+        </div>
+        <ul class="card__list">
+          <li>+200 canais em HD e Full HD</li>
+          <li>Filmes e séries atualizados toda semana</li>
+          <li>Suporte para todos os dispositivos</li>
+          <li>Teste grátis de 24h</li>
+        </ul>
+        <a class="button primary full" href="#planos">Assinar agora</a>
+      </div>
+    </section>
+
+    <section id="dispositivos" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Compatibilidade total</p>
+        <h2>Funciona nos dispositivos que você já usa</h2>
+        <p class="lede">Assista na TV, no celular ou no computador. Basta baixar o app IPTV favorito e inserir seu login.</p>
+      </div>
+      <div class="grid devices">
+        <div class="card">
+          <div class="icon">📺</div>
+          <h3>Smart TVs</h3>
+          <p>Samsung, LG, Android TV e Fire TV com apps como Smart IPTV, TiviMate e Duplex.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Mobile</h3>
+          <p>Android e iOS com players leves (OTT Navigator, Smarters, GSE, IPTVX).</p>
+        </div>
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>PC & Mac</h3>
+          <p>Assista direto no navegador ou em players como VLC e Kodi.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎮</div>
+          <h3>Consoles</h3>
+          <p>Xbox e PlayStation usando apps de streaming disponíveis nas stores.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lancamentos" class="section section--dark">
+      <div class="section__header">
+        <p class="eyebrow">Lançamentos em destaque</p>
+        <h2>Os filmes mais pedidos, sempre atualizados</h2>
+        <p class="lede">A vitrine se renova automaticamente. Aperte play e aproveite a sessão.</p>
+      </div>
+      <div class="slider">
+        <div class="slider__info">
+          <p class="tag" id="movie-genre">Ação</p>
+          <h3 id="movie-title">Resgate Impossível</h3>
+          <p id="movie-description">Um agente retorna do anonimato para salvar o mundo de um ataque digital global.</p>
+          <div class="slider__controls">
+            <button class="button ghost" id="prev-movie">◀</button>
+            <button class="button primary" id="next-movie">▶</button>
+          </div>
+        </div>
+        <div class="slider__poster" id="movie-poster" aria-label="Poster do filme"></div>
+      </div>
+    </section>
+
+    <section id="planos" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Assinatura simples</p>
+        <h2>Plano único por R$30/mês</h2>
+        <p class="lede">Preço direto, sem surpresas. Inclui suporte humano, atualização diária e guia eletrônico de programação.</p>
+      </div>
+      <div class="plan">
+        <div class="plan__price">
+          <span class="currency">R$</span>
+          <span class="value">30</span>
+          <span class="period">/mês</span>
+        </div>
+        <ul class="plan__benefits">
+          <li>2 telas simultâneas</li>
+          <li>Replay e conteúdo on-demand</li>
+          <li>Gravação em nuvem por 7 dias</li>
+          <li>Instalação guiada passo a passo</li>
+        </ul>
+        <a class="button primary full" href="#indicacao">Quero assinar</a>
+      </div>
+    </section>
+
+    <section id="indicacao" class="section section--accent">
+      <div class="section__content">
+        <div>
+          <p class="eyebrow">Indique e ganhe</p>
+          <h2>Ganhe 1 mês grátis a cada amigo indicado</h2>
+          <p class="lede">Compartilhe seu link de convite. Cada novo assinante garante um mês a mais sem custo para você.</p>
+          <div class="referral">
+            <input id="referral-link" type="text" value="https://iptvprime.com/convite/seuID" readonly aria-label="Link de indicação">
+            <button id="copy-link" class="button primary">Copiar link</button>
+          </div>
+          <p class="hint" id="copy-feedback" role="status">Pronto para compartilhar.</p>
+        </div>
+        <div class="badge">
+          <span class="badge__number">+1</span>
+          <p class="badge__text">Mês grátis por indicação</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 IPTV Prime. Streaming rápido, simples e sem burocracia.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
